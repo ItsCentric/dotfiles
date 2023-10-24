@@ -63,6 +63,7 @@ z4h init || return
 
 # Extend PATH.
 path=(~/bin $path)
+export PATH=$PATH:~/.dotnet/tools
 
 # Export environment variables.
 export GPG_TTY=$TTY

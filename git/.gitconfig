@@ -3,3 +3,9 @@
 [user]
 	email = isaiahmstockton@gmail.com
 	name = Isaiah
+[credential]
+	credentialStore = gpg
+	helper = 
+	helper = /home/isaiah/.dotnet/tools/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
