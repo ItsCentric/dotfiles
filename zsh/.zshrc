@@ -6,7 +6,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 
 # Extend PATH.
 path=(~/bin $path)
-export PATH=$PATH:~/.dotnet/tools
+export PATH=$PATH:~/.dotnet/tools:/usr/pgadmin4/bin
 
 # Export environment variables.
 export GPG_TTY=$TTY
@@ -26,6 +26,9 @@ compdef _directories md
 
 # Define aliases.
 alias tree='tree -a -I .git'
+alias pgstart='sudo service postgresql start'
+alias pgstop='sudo service postgresql stop'
+alias pgstatus='sudo service postgresql status'
 
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
