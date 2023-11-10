@@ -31,7 +31,7 @@ alias pgstop='sudo service postgresql stop'
 alias pgstatus='sudo service postgresql status'
 
 # Add flags to existing aliases.
-alias ls="${aliases[ls]:-ls} -A"
+alias ls="${aliases[ls]:-ls} -A --color=auto"
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
