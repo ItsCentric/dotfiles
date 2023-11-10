@@ -9,3 +9,12 @@
 	helper = /home/isaiah/.dotnet/tools/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[alias]
+    s = status
+    co = checkout
+    cob = checkout -b
+    del = branch -d
+    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdat
+    reset = HEAD~1 --mixed
+    res = !git reset --hard
+    lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
