@@ -6,7 +6,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 
 # Extend PATH.
 path=(~/bin $path)
-export PATH=$PATH:~/.dotnet/tools:/usr/pgadmin4/bin
+export PATH=$PATH:~/.dotnet/tools:/usr/pgadmin4/bin:/usr/local/go/bin:$HOME/go/bin
 
 # Export environment variables.
 export GPG_TTY=$TTY
@@ -38,3 +38,4 @@ setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 eval "$(starship init zsh)"
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
