@@ -44,3 +44,8 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
+
+vim.cmd([[augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END]])
