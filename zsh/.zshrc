@@ -1,7 +1,6 @@
 # automagically load tmux on launch
 if [ "$TMUX" = "" ]; then tmux; fi
 
-TERM=xterm-256color
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 
 # Extend PATH.
@@ -13,6 +12,7 @@ export GPG_TTY=$TTY
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export TERM=tmux-256color
 
 # Autoload functions.
 autoload -Uz zmv
