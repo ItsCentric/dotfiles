@@ -30,5 +30,7 @@ require("lazy").setup({
 	{ "hrsh7th/nvim-cmp" },
 	{ "L3MON4D3/LuaSnip" },
 	{ "sbdchd/neoformat" },
+	{ "github/copilot.vim" },
+	{ "lewis6991/gitsigns.nvim" },
 })
 vim.cmd.colorscheme("catppuccin")
