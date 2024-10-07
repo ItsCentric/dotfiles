@@ -32,5 +32,16 @@ require("lazy").setup({
 	{ "sbdchd/neoformat" },
 	{ "github/copilot.vim" },
 	{ "lewis6991/gitsigns.nvim" },
+	{ "tpope/vim-surround" },
+	{
+		"amitds1997/remote-nvim.nvim",
+		version = "*", -- Pin to GitHub releases
+		dependencies = {
+			"nvim-lua/plenary.nvim", -- For standard functions
+			"MunifTanjim/nui.nvim", -- To build the plugin UI
+			"nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
+		},
+		config = true,
+	},
 })
 vim.cmd.colorscheme("catppuccin")

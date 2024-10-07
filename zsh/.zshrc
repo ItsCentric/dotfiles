@@ -5,7 +5,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 
 # Extend PATH.
 path=(~/bin $path)
-export PATH=$PATH:~/.dotnet/tools:/usr/pgadmin4/bin:/usr/local/go/bin:$HOME/go/bin:$HOME/.node_modules/bin:$HOME/.npm-packages/bin:$HOME/home/centric/.local/bin
+export PATH=$PATH:~/.dotnet/tools:/usr/pgadmin4/bin:/usr/local/go/bin:$HOME/go/bin:$HOME/.node_modules/bin:$HOME/.npm-packages/bin:$HOME/home/centric/.local/bin:/home/centric/.fly/bin:/home/centric/.local/bin
 
 # Export environment variables.
 export GPG_TTY=$TTY
@@ -39,3 +39,10 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 eval "$(starship init zsh)"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# bun completions
+[ -s "/home/centric/.bun/_bun" ] && source "/home/centric/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
